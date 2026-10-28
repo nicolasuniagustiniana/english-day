@@ -56,7 +56,7 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;p
 @media print{body{background:#fff}.valance,header,nav,.bar,#t-scan,#t-log,#t-dash{display:none!important}.panel{border:0;box-shadow:none;padding:0;margin:0;background:none}.panel>:not(#tickets){display:none!important}main{padding:0}section{display:none!important}#t-gen{display:block!important}.tk{break-inside:avoid;margin-bottom:12mm}.tk img{box-shadow:none}}
 </style></head><body>
 <div class="valance"></div>
-<header><img class="mascot" id="mascot" src="imagenes/logo.jpeg" alt="Luni, mascota de English Day">
+<header><img class="mascot" id="mascot" src="logo.jpeg" alt="Luni, mascota de English Day">
   <nav id="nav"><button data-t="gen" class="on">🎟️ Invitaciones</button><button data-t="scan">📷 Escáner</button><button data-t="log">📋 Registro</button><button data-t="dash">📊 Panel</button></nav>
 <main>
 <section id="t-gen" class="on">
@@ -96,7 +96,7 @@ table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;p
 <script>
 const LOGO = new Image();
 LOGO.onload = () => { cache.clear(); render() };
-LOGO.src = 'imagenes/logo.jpeg'; // Asegúrate de que coincida con la extensión real (.jpg o .png)
+LOGO.src = 'logo.jpeg'; // Asegúrate de que coincida con la extensión real (.jpg o .png)
 document.getElementById('mascot').src = LOGO.src;
 const parseCode=r=>{r=String(r||'');const i=r.lastIndexOf('#');return (i>=0?r.slice(i+1):r).trim().toUpperCase()};
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
